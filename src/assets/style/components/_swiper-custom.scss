@@ -1,0 +1,30 @@
+.custom-vertical-swiper {
+  &.swiper-vertical {
+    .swiper-pagination-bullets {
+      right: auto;
+      left: 48px;
+
+      .swiper-pagination-bullet {
+        margin-block: map-get($spacers, 5);
+        &:first-child {
+          color: white;
+        }
+      }
+    }
+  }
+  .swiper-bullet-text {
+    font-size: map-get($font-sizes, 6);
+    display: block;
+    width: 80px;
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: orange;
+    .swiper-bullet-text {
+      opacity: 1;
+    }
+  }
+}
+/* custom-bullet */
